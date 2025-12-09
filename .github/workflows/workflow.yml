@@ -12,7 +12,7 @@ jobs:
         with:
           from: 'docs/README.md'
           to: '720109569'
-          user: ${{ secrets.CONFLUENCE_USER }} 
           cloud: ${{ secrets.CONFLUENCE_CLOUD }}
+          user:  ${{ secrets.CONFLUENCE_USER }} 
           token: ${{ secrets.CONFLUENCE_TOKEN }}
 
