@@ -65,6 +65,8 @@ jobs:
           ISSUE_TITLE: '${{ github.event.issue.title }}'
           ISSUE_BODY: '${{ github.event.issue.body }}'
           AVAILABLE_LABELS: '${{ steps.get_labels.outputs.available_labels }}'
+          ATLASSIAN_USER: '${{ secrets.CONFLUENCE_USER }}'
+          ATLASSIAN_TOKEN: '${{ secrets.CONFLUENCE_TOKEN }}'
         with:
           gcp_location: '${{ vars.GOOGLE_CLOUD_LOCATION }}'
           gcp_project_id: '${{ vars.GOOGLE_CLOUD_PROJECT }}'
